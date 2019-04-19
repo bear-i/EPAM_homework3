@@ -1,9 +1,17 @@
 package com.epam.RationalRose;
 
 public class Indicator {
-    CoolingChamber coolingChamber;
+    private CoolingChamber coolingChamber;
 
-    public Indicator(CoolingChamber coolingChamber) {
+    Indicator(CoolingChamber coolingChamber) {
+        this.coolingChamber = coolingChamber;
+    }
+
+    public CoolingChamber getCoolingChamber() {
+        return coolingChamber;
+    }
+
+    public void setCoolingChamber(CoolingChamber coolingChamber) {
         this.coolingChamber = coolingChamber;
     }
 

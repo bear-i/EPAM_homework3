@@ -1,24 +1,26 @@
 package com.epam.RationalRose;
 
 public class DoorOpeningSensor {
-    CoolingChamber coolingChamber;
+    private CoolingChamber coolingChamber;
 
-    public DoorOpeningSensor(CoolingChamber coolingChamber) {
+    DoorOpeningSensor(CoolingChamber coolingChamber) {
+        this.coolingChamber = coolingChamber;
+    }
+
+    public CoolingChamber getCoolingChamber() {
+        return coolingChamber;
+    }
+
+    public void setCoolingChamber(CoolingChamber coolingChamber) {
         this.coolingChamber = coolingChamber;
     }
 
     public void observeDoor(CoolingChamber.Door coolingChamberDoor){
         if(coolingChamberDoor.isOpened()){
-            for(int i =0; i<1000; i++){
-
-            }
+            coolingChamber.getTimer().checkTime();
             if(coolingChamberDoor.isOpened()){
-                makeSound();
+                coolingChamber.getBeeper().makeSound();
             }
         }
-    }
-
-    void makeSound(){
-        System.out.println("Beep");
     }
 }

@@ -1,11 +1,21 @@
 package com.epam.RationalRose;
 
 public class Timer {
-    CoolingChamber coolingChamber;
+    private CoolingChamber coolingChamber;
 
-    public Timer(CoolingChamber coolingChamber) {
+    Timer(CoolingChamber coolingChamber) {
         this.coolingChamber = coolingChamber;
     }
 
+    public CoolingChamber getCoolingChamber() {
+        return coolingChamber;
+    }
 
+    public void setCoolingChamber(CoolingChamber coolingChamber) {
+        this.coolingChamber = coolingChamber;
+    }
+
+    public void checkTime(){
+
+    }
 }

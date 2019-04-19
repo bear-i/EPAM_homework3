@@ -3,9 +3,9 @@ package com.epam.RationalRose;
 import java.util.ArrayList;
 
 public class Fridge {
-    ArrayList<CoolingChamber> chambers = new ArrayList<CoolingChamber>();
-    ElectronicJournal journal;
-    USBPort usbPort;
+    private ArrayList<CoolingChamber> chambers = new ArrayList<CoolingChamber>();
+    private ElectronicJournal journal;
+    private USBPort usbPort;
 
     public Fridge() {
         chambers.add(new CoolingChamber(this));

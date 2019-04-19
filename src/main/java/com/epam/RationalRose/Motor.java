@@ -1,9 +1,17 @@
 package com.epam.RationalRose;
 
 public class Motor {
-    CoolingChamber coolingChamber;
+    private CoolingChamber coolingChamber;
 
-    public Motor(CoolingChamber coolingChamber) {
+    Motor(CoolingChamber coolingChamber) {
+        this.coolingChamber = coolingChamber;
+    }
+
+    public CoolingChamber getCoolingChamber() {
+        return coolingChamber;
+    }
+
+    public void setCoolingChamber(CoolingChamber coolingChamber) {
         this.coolingChamber = coolingChamber;
     }
 

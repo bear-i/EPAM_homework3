@@ -1,9 +1,17 @@
 package com.epam.RationalRose;
 
 public class TemperatureRegulator {
-    CoolingChamber coolingChamber;
+    private CoolingChamber coolingChamber;
 
-    public TemperatureRegulator(CoolingChamber coolingChamber) {
+    TemperatureRegulator(CoolingChamber coolingChamber) {
+        this.coolingChamber = coolingChamber;
+    }
+
+    public CoolingChamber getCoolingChamber() {
+        return coolingChamber;
+    }
+
+    public void setCoolingChamber(CoolingChamber coolingChamber) {
         this.coolingChamber = coolingChamber;
     }
 
